@@ -11,14 +11,13 @@ const StyledFooter = styled.footer`
 
     p {
         background-color: orange;
-        
     }
 `
 
 export default function Footer() {
     return (
         <StyledFooter>
-            <p>Desenvolvido por Wesley</p>
+            <p>Desenvolvido por Wesley Damiao</p>
         </StyledFooter>
     )
 }

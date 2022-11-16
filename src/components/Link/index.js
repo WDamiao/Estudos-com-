@@ -1,7 +1,7 @@
 import NextLink from 'next/link'
 import styled from 'styled-components'
 
-const StyledLink = styled.a`
+const StyledLink = styled.p`
     padding: 1rem;
     color: white;
      :hover{

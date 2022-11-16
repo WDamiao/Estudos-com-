@@ -6,9 +6,14 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     background: teal;
-    font-family: Open-Sans, Helvetica, Sans-Serif;
     list-style: none;
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  }
+
+  input {
+    padding: 1rem;
+    background-color: white;
   }
 `;
  

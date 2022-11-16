@@ -8,10 +8,12 @@ const StyledConteudo = styled.div`
     gap: 1rem;
 `;
 
-export default function Conteudo({children}){
+export default function Conteudo({ children }) {
     return (
-        <StyledConteudo>
-            {children}
-        </StyledConteudo>  
+        <>
+            <StyledConteudo>
+                {children}
+            </StyledConteudo>
+        </>
     )
 }

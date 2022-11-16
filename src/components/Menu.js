@@ -28,7 +28,7 @@ export default function Menu(){
                 <nav>
                     <ul>
                         <li><Link href="/">Home</Link></li>
-                        <li><Link href="/faq">FAQ</Link></li>
+                        <li><Link href="/repos">Repositorios</Link></li>
                         <li><Link href="/">Redes</Link></li>
                     </ul>
                 </nav>
