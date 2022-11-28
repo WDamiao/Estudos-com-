@@ -1,21 +1,21 @@
 import NextLink from 'next/link'
 import styled from 'styled-components'
 
-const StyledLink = styled.p`
+export const StyledLink = styled.div`
     padding: 1rem;
     color: white;
-     :hover{
+    background-color: white;
+    border: 1px solid white;
+    &:hover {
         color: greenyellow;
-        background-color: #202020;
+        background-color: #f9f9f9;
     }
 `
 
 export default function Link({ children, href }) {
     return (
         <NextLink href={href} passHref>
-            <StyledLink>
-                {children}
-            </StyledLink>
+            {children}
         </NextLink>
     )
 }

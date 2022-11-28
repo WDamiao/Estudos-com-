@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Link from "./Link"
+import Link, { StyledLink } from "./Link"
 
 const StyledMenu = styled.div`
     display: flex;
@@ -7,7 +7,7 @@ const StyledMenu = styled.div`
     align-items: center;
     padding: 1rem;
 
-    section{
+    .logo{
         width: 150px;
         height: 40px;
         background-color: red;
@@ -24,12 +24,12 @@ const StyledMenu = styled.div`
 export default function Menu(){
     return (
             <StyledMenu>
-                <section>LOGO</section>
+                <div className="logo">LOGO</div>
                 <nav>
                     <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li><Link href="/repos">Repositorios</Link></li>
-                        <li><Link href="/">Redes</Link></li>
+                        <li><StyledLink><Link href="/">Home</Link></StyledLink></li>
+                        <li><StyledLink><Link href="/repos">Repositorios</Link></StyledLink></li>
+                        <li><StyledLink><Link href="/">Redes</Link></StyledLink></li>
                     </ul>
                 </nav>
             </StyledMenu>

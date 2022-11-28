@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
-const StyledListaRepos = styled.ul`
+const StyledListaRepos = styled.div`
     display:flex;
-    flex-direction:column;
+    flex-wrap: wrap;
     gap: 3rem;
 `
 

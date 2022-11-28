@@ -1,5 +1,6 @@
+import Card from "../src/components/Card";
 import Conteudo from "../src/components/Conteudo";
-import Link from "../src/components/Link";
+import Link, { StyledLink } from "../src/components/Link";
 import ListaRepositorios from "../src/components/ListaRepositorios";
 import PageTitle from "../src/components/PageTitle";
 import Title from "../src/components/Title";
@@ -13,7 +14,13 @@ export default function PageFaq({ repos }) {
                 {
                     <ListaRepositorios>
                         {repos.map((repo) => (
-                            <li key={repo.name}><Link href={repo.html_url}>{repo.name}</Link></li>
+                            <Card key={repo.name}>
+                                <h3>{repo.name}</h3>
+                                <div className="buttonsContainer">
+                                    <StyledLink className="link"><Link href={repo.html_url}>Github</Link></StyledLink>
+                                    <StyledLink className="link"><Link href={`https://wdamiao.github.io/${repo.name}`}>Page</Link></StyledLink>
+                                </div>
+                            </Card>
                         ))}
                     </ListaRepositorios>
                 }
