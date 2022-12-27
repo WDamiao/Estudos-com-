@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 export const StyledLink = styled.div`
     padding: 1rem;
-    color: white;
-    background-color: white;
+    color: black;
+    background-color: green;
     border: 1px solid white;
     &:hover {
         color: greenyellow;

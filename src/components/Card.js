@@ -8,7 +8,6 @@ const StyledCard = styled.div`
     height: 400px;
     flex:1;
     justify-content: end;
-    border-radius: 15px;
     text-align: center;
     box-shadow: 4px 4px 4px 4px rgba(255, 255, 255, 0.2);
     transition: .6s ease-in-out;
@@ -19,17 +18,20 @@ const StyledCard = styled.div`
     h3 {
         background-color: white;
         padding: 0.5rem;
+        color: black;
     }
 
     .buttonsContainer {
         display: flex; 
-        border-radius: 15px;
     }
 
     .link {
         width: 100%;
         background-color: white;
-        
+        color: black;
+    } 
+    & .link:hover {
+        background-color: green;
     }
 `
 export default function Card({children}) {
